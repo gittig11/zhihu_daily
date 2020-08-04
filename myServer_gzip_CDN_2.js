@@ -93,6 +93,6 @@ app.use(async (ctx) => {
   await send(ctx, 'dist/index.html');
 })
 
-app.listen(80, () => {
-  console.log('Server is starting at port 80');
+app.listen(3000, () => {
+  console.log('Server is starting at port 3000');
 })
