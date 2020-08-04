@@ -76,10 +76,12 @@ module.exports = {
   },
 
   chainWebpack: config => {
+    // CI/CD时要关闭这个--200804.
     // 可视化分析打包
-    config
-      .plugin('webpack-bundle-analyzer')
-      .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin)
+    // config
+    //   .plugin('webpack-bundle-analyzer')
+    //   .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin)
+    
     // ============压缩图片 start============
     config.module
       .rule('images')
